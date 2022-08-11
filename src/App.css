@@ -1,11 +1,9 @@
-.body{
-  font-family: 'Times New Roman', Times, serif;
-}
 
 
 *{
   background-color:#F2FBF6;
-  margin: 0px;
+  margin: 3px;
+ 
 }
 .box{
   height: 185px;
@@ -21,12 +19,14 @@ h1{
   line-height: 45px;
   text-align: center;
   padding-top: 30px;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 p{
   font-size: 18px;
   font-weight: 500;
   padding-top: 10px;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 
@@ -53,11 +53,14 @@ p{
 
 .nav{
   background-color: #F2FBF6;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .imgg{
   margin-left: 100px;
-  width: 50%;
+  width: 8%;
 }
 
 .error {
@@ -65,3 +68,16 @@ p{
   text-align: center;
 }
 
+@media (max-width:600px) {
+  h1{
+    font-size: 20px;
+  }
+}
+
+.nav{
+  width: 100%;
+}
+
+.imgg{
+  width: 18%;
+}
