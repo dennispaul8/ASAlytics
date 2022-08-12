@@ -68,7 +68,6 @@ function App() {
 
   return (
     <>
-   <>
     <nav className="nav">
         <img className="imgg" src={pic} alt="" />
         <button onClick={handleFetch}  className="btn1">ANALYZE ASAs</button>
