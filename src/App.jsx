@@ -68,13 +68,10 @@ function App() {
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light nav">
-      <div className="container-fluid">
-        <li className="nav-item">
+   <>
+    <nav className="nav">
         <img className="imgg" src={pic} alt="" />
-        </li>
         <button onClick={handleFetch}  className="btn1">ANALYZE ASAs</button>
-      </div>
     </nav>
     {isLoading ? <Loading /> : renderUser}
     {errorMessage && <div className="error">{errorMessage}</div>}
