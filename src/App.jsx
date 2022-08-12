@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useEffect } from 'react';
 import './App.css';
 import pic from "./img/HeaderL.png";
 import Loading from './component/Loading';
@@ -57,7 +56,7 @@ function App() {
             <div key={asa.assetId} className='box'>
               <img src={asa.logo} style={{ width: "13%" }} alt="" />
               <p>{asa.name}</p>
-              <button className='btnn' style={{ backgroundColor: asa.available == true ? '#6FD791' : asa.available == false ? '#BC3131' : 'white' }} >
+              <button className='btnn' style={{ backgroundColor: asa.available === true ? '#6FD791' : asa.available === false ? '#BC3131' : 'white' }} >
                 {asa.available === true ? "Available" : "Unavailable"}
               </button>
             </div>
